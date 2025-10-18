@@ -21,4 +21,13 @@ public abstract class Animal {
     
     public abstract void caminha();
     public abstract void emitirSom();
+    
+    // polimorfismo por sobrecarga
+    public void comer() {
+        System.out.println("O animal esta comendo");
+    }
+
+    public void comer(String comida) {
+        System.out.println("O animal está comendo " + comida);
+    }
 }

@@ -15,9 +15,19 @@ public class ClassesAbstrata {
      */
     public static void main(String[] args) {
         Hamster meuHamster = new Hamster();
-
+        Peixe meuPeixe = new Peixe();
+        
+        System.out.println("Hamster: ");
         meuHamster.caminha();
         meuHamster.emitirSom();
+        meuHamster.comer();
+        meuHamster.comer("sementes");
+        
+        System.out.println("Peixe: ");
+        meuPeixe.caminha();
+        meuPeixe.emitirSom();
+        meuPeixe.comer();
+        meuPeixe.comer("algas");
     }
     
 }
